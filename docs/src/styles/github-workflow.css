@@ -1,0 +1,459 @@
+/* Page grid with TOC */
+.github-workflow-page.page-with-toc {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 0 var(--spacing-2xl);
+  align-items: start;
+  max-width: calc(var(--content-width) + 240px + var(--spacing-2xl));
+}
+
+.github-workflow-page .page-main-content {
+  min-width: 0;
+}
+
+/* TOC sidebar */
+.toc-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.toc-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted, #6b7280);
+  margin-bottom: var(--spacing-sm);
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toc-link {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted, #6b7280);
+  text-decoration: none;
+  padding: 4px 0 4px 12px;
+  border-left: 2px solid transparent;
+  line-height: 1.5;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+}
+
+.toc-link:hover {
+  color: var(--color-text, #111);
+}
+
+.toc-link--active {
+  color: var(--color-text, #111);
+  font-weight: 600;
+  border-left-color: var(--color-primary, #1e40af);
+}
+
+@media (max-width: 768px) {
+  .github-workflow-page.page-with-toc {
+    grid-template-columns: 1fr;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+}
+
+/* CTA box */
+.github-cta-box {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: linear-gradient(135deg, #f0f4ff, #e8f0fe);
+  border: 1px solid #c7d6f0;
+  border-radius: 12px;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.github-cta-icon {
+  flex-shrink: 0;
+  color: #24292f;
+  display: flex;
+  align-items: center;
+}
+
+.github-cta-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.github-cta-heading {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text, #111);
+  margin: 0 0 2px;
+}
+
+.github-cta-desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #555);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.github-cta-button {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  background: #24292f;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.github-cta-button:hover {
+  background: #1b1f23;
+}
+
+@media (max-width: 600px) {
+  .github-cta-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Board flow */
+.github-workflow-page .board-flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  max-width: 600px;
+}
+
+.board-column {
+  border-radius: 8px;
+  padding: var(--spacing-md);
+}
+
+.board-column-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-xs);
+  margin-bottom: 4px;
+}
+
+.board-column-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.board-column-limit {
+  font-size: 0.9375rem;
+  color: var(--text-secondary, #6b7280);
+  white-space: nowrap;
+}
+
+.board-column-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary, #555);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.github-link {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--color-link, #1e40af);
+  text-decoration: none;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+.github-list {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.github-list li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.github-steps {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.github-steps li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.github-steps li strong {
+  font-weight: 600;
+}
+
+/* Prioritering section */
+.criteria-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.criteria-card {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-accent-bg, #f8f9fb);
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.criteria-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  color: var(--color-primary, #1e40af);
+  border-radius: 10px;
+}
+
+.criteria-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--color-text, #111);
+}
+
+.criteria-question {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-text, #111);
+  margin: 0 0 4px;
+}
+
+.criteria-body p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #555);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.subsection-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: var(--spacing-xl) 0 var(--spacing-md);
+  color: var(--color-text, #111);
+}
+
+/* Scale list */
+.scale-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.scale-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.scale-badge {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border-radius: 6px;
+}
+
+.scale-5 {
+  background: #fecaca;
+  color: #991b1b;
+}
+.scale-4 {
+  background: #fed7aa;
+  color: #9a3412;
+}
+.scale-3 {
+  background: #fef08a;
+  color: #854d0e;
+}
+.scale-2 {
+  background: #bfdbfe;
+  color: #1e40af;
+}
+.scale-1 {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.scale-item strong {
+  font-size: 0.9375rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.scale-item p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #555);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Formula box */
+.formula-box {
+  background: #f0f4ff;
+  border: 1px solid #c7d6f0;
+  border-radius: 10px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin: var(--spacing-md) 0;
+}
+
+.formula {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary, #1e40af);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.01em;
+}
+
+.formula-box p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #555);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Note box */
+.note-box {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.note-box strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text, #111);
+}
+
+.note-box ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.note-box li {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #555);
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .criteria-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Labels section */
+.label-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.label-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.label-chip {
+  flex-shrink: 0;
+  min-width: 100px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  background: #dbeafe;
+  color: #1e40af;
+  white-space: nowrap;
+}
+
+.label-row-desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #555);
+}
+
+/* Stage field section */
+.stage-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  max-width: 600px;
+}
+
+.stage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 8px;
+  border-left: 4px solid transparent;
+}
+
+.stage-number {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  border-radius: 50%;
+}
+
+.stage-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.stage-name {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  margin: 0 0 2px;
+  color: var(--color-text, #111);
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted, #555);
+  margin: 0;
+  line-height: 1.5;
+}

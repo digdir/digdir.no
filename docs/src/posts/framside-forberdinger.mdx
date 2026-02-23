@@ -1,0 +1,128 @@
+---
+title: "Enkle designgrep for å forbedre framsida"
+description: "Vi løftar framsida og temasida med enkle og sjølvsagde grep som gjer dei meir oversiktlege og brukarvennlege."
+image: "/images/posts/frontpage.png"
+date: "2025-12-10"
+slug: "framside-forberdinger-2025-12"
+---
+
+import Quote from "../components/Quote";
+import Figure from "../components/Figure";
+
+## 1. Sidestilling av innhold
+
+I dag er mykje av innhaldet på framsida midtstilt, både overskriftene og tekstinnhaldet i modulane.
+
+Dette krev meir kognitiv energi frå brukaren og gjer det tyngre å orientere seg i innhaldet. For nye brukarar kan dette føre til at det blir vanskelegare å oppfatte strukturen på sida og få oversikt over kva som er viktig.
+
+<Quote author="Nielsen Norman Group (NN/g)">
+  Left-aligned text creates a predictable starting point for each line, which
+  makes scanning easier and faster. Centered text slows reading because users
+  must find a new starting point for each line
+</Quote>
+
+Når innhald blir midtstilt, mister auget eit fast startpunkt på kvar linje. Det gjer at brukaren må «leite» etter starten på teksten kvar gong dei skal lese, i staden for å kunne scanne raskt nedover langs ein venstrekant. Dette ser vi som problemtatisk når innhaldet i primær og sekundær navigasjon vår går over fleire linjer.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/alignment-before.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+  caption="Bildet viser kvifor det blir vanskeligare å scanne sida fordi brukaren må leite etter starten på kvar linje, illustrert med den rosa streken."
+/>
+
+### Vårt løysingsforslag
+
+Venstrejustering gjer at teksten blir lettare å scanne, fordi auget får eit tydeleg og konsekvent ankerpunkt på venstresida. Midtstillt tekst kan fortsatt vere eit godt virkemiddel for å skape variasjon i designet, men vi ønskjer ikkje å bruke det på viktig navigasjon.
+
+Vi tok og å fjerna den farga streken som kjem rett under modul-titlane. Den har ikkje ein god funksjon på nettsida slik den er implementert i dag, og gjer berre at nettsida blir enda lenger med meir skroll for brukaren.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/alignment-after.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+  caption="Bildet viser det nye konseptet med venstrejustert innhold. Den rosa streken illustrerer korleis auget til brukaren beveger seg meir loddrett og stabilt nedover."
+/>
+
+## 2. Fjerne annakvar grå bakgrunn
+
+I dag får modulane annakvar grå bakgrunn automatisk. Dette skapar veldig mykje visuelt støy og mykje luft over og under modulane. Dette gjer at det for eksempel blir 300 pikslar med luft mellom boksane til bloggen og rapportane.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/spacing-before.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+/>
+
+### Vårt nye løysingsforslag
+
+I det nye forslaget fjerner vi desse grå bakgrunnane og heller bruker tittel og luft for å skille modulane fra kvarandre. Færre visuelle virkemiddel for å skille frå kvarandre som skaper mindre støy og eit meir behagelig og rolig uttrykk. I det same eksempelet som over blir det berre 180 pikslar med luft mellom boksane.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/spacing-after.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+/>
+
+## 3. Forbedre navigasjonsmønteret på nettsida
+
+I dag legg vi på ei pil til høgre i titlane for å markere at ein boks er ei lenke som tar brukaren til ei ny side.
+
+Dette er problematisk av tre grunnar:
+
+- Lenker på nettsider har som regel understrek, slik at pila aleine blir litt svak som einaste lenke-indikator.
+- Pila som legg seg til høgre for titlane får ulik posisjon i kvar einaste boks sidan titlane dei alltid har ulik lengde. Dette gjer at brukaren må skanne side for å finne ut om ein boks er ei lenke eller ikkje.
+- Det er eit WCAG krav som seier at ting skal vere koda som det ser ut som. Det er veldig utydelig at boksane er lenker berre med det lille ikonet.
+
+<Quote author="uutilsynet.no: 1.3.1 Informasjon og relasjoner (Nivå A)">
+  KORT FORTALT: Ting skal være kodet som det ser ut som. For eksempel skal en
+  overskrift være kodet som en overskrift.
+</Quote>
+
+Under mange av modulene ligg det ein “Sjå alle” knapp som tar brukaren til ulike arkiv på nettsida. Dette er ei lenke i koden med ein “a-tag”. Det blir derfor feil å style denne som ein knapp.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/navigation-before.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+/>
+
+### Vårt nye løysingsforslag
+
+I det nye forslaget har vi fjerna pilene og i staden lagt til understrek på titlane i alle boksane som fungerer som lenkjer i koden. Dette gir eit betre og tydelegare navigasjonsmønster på sida, der brukaren lettare forstår at element med understreking på nettsida fungerer som lenkjer.
+
+Når det kjem til "Sjå alle" knappen så har vi styla denne om til ei lenke med understrek og plassert den nederst til høgre i griddet. Dette følgjer det naturlege lesemønsteret frå venstre mot høgre. På den måten blir dette ein avsluttande handling som brukaren kan velje å gjere når han er ferdige med å lese dei tre oppføringane.
+
+I tillegg til understrek vil vi av og til bruke "pil til høgre" som eit sekundært virkemiddel for å markere eit element som ei lenke. Bruken av denne kjem litt an på kontekt og korleis designet skal sjå ut. For "Sjå alle" lenka opplever vi at det hjelper visuelt med pil og ein farge som eit anker for at brukaren enklare skal legge merke til at den ligger der.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/navigation-after.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+/>
+
+## 4. Fjerne grafiske elementer i margane på nettsida
+
+I dag vert det nytta grafiske element som firkantar og sirklar i margane på nettsida. Desse er overfladiske, unødvendinge og manglar funksjon. I tillegg overlappar teksten av og til formene, noko som blant anna skapar dårlege kontrastforhold. I eit møte med Studiogeist (dei som laga profilen vår) fann vi ut at dette var feil bruk av profilen, og oppleves meir som støy enn som nyttige designelement. Vi kjem derfor til å fjerne alle desse elementa.
+
+Ved ein seinare anledning vil vi sjå meir på korleis vi kan implementere profilen betre i designet med desse formene.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/margins.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+/>
+
+## 5. Ny header-modul
+
+I dag bruker brukar vi kampanjemodulen med tittel og ingress for å skape ein naturleg inngang til framsida. Problemet er at denne modulen er ikkje unik, og dermed manglar framsida ein tydeleg identitet i toppen. Dette gjer det uklart for brukaren at dei faktisk har kome til sjølve framsida.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/header-before.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+  caption="Slik ser toppen ut på nettsida i dag med kampanjemodulen."
+/>
+
+I det nye forslaget trekkjer vi ut tittel og ingress frå kampanjemodulen og over i ein ny modul som skal fungere som ei naturleg inngang til framsida. Denne modulen får meir visuell tyngd enn dei andre modulane gjennom bruk av større tekst og eit nytt, større bilde. Bildet støttar opp om teksten «Saman for ein enklare digital kvardag» og det bodskapet Digdir ønskjer å formidle. Modulen er tenkt som ein midlertidig overgang før vi får etablert ei meir gjennomarbeida framside.
+
+<Figure
+  src="/images/posts/framside-forberdinger-2025-12/header-after.png"
+  alt="Eksempel på midtstilt innhald på framsida"
+  caption="Slik ser headermodulen ut med det nye forslaget. Stor og tydelig tittel, ingress og bilde."
+/>
+
+## Oppsummering
+
+Endringane vi foreslår her er ikkje store kvar for seg, men til saman løftar dei framsida merkbart. Venstrejustert tekst, mindre visuelt støy, tydelegare lenkjer, reinare margar og ein ny headermodul — alt dette gjer sida enklare å bruke og lettare å forstå. Vi ser fram til å følgje opp med fleire forbetringar etter kvart som vi testar og lærer meir.

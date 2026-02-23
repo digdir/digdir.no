@@ -1,0 +1,80 @@
+.page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--spacing-2xl) 0;
+}
+
+.page-breadcrumb {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.page-breadcrumb a {
+  color: var(--color-text-muted);
+  text-decoration: underline;
+}
+
+.page-breadcrumb a:hover {
+  color: var(--color-text);
+}
+
+.page h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-intro {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.page-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.page-section h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.page-section h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.page-section p {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.page-section a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.principles-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.principles-list li {
+  padding: var(--spacing-md);
+  background: var(--color-accent-bg);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.principles-list li::before {
+  content: "→ ";
+  color: var(--color-primary);
+  font-weight: 700;
+}

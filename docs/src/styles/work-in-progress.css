@@ -1,0 +1,36 @@
+.wip-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin: 0 0 var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: #fef9ec;
+  border: 1px solid #f5d880;
+  border-left: 4px solid #e5a50a;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.wip-icon {
+  flex-shrink: 0;
+  color: #b7791f;
+  margin-top: 2px;
+}
+
+.wip-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.wip-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.wip-description {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #78350f;
+  margin: 0;
+}
