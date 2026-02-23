@@ -1,6 +1,6 @@
 ---
 title: "Justeringar på arrangementsidene etter brukartesting"
-description: "Etter å ha gjennomført brukartesting på arrangementsidene, har vi identifisert fleire områder for forbedring. I dette innlegget deler vi dei viktigaste justeringane vi har gjort for å forbedre brukaropplevelsen."
+description: "Etter å ha gjennomført brukartesting på arrangementsidene, har vi identifisert fleire område for forbetring. I dette innlegget deler vi dei viktigaste justeringane vi har gjort for å forbetre brukaropplevelsen."
 image: "/images/posts/kurs-bilde.png"
 date: "2026-02-20"
 slug: "justeringar-paa-arrangementmal-2026-02"
@@ -10,49 +10,61 @@ import UserFeedback from "../components/UserFeedback";
 import WorkInProgress from "../components/WorkInProgress";
 import Figure from "../components/Figure";
 
-<WorkInProgress />
+Vi gjennomførte brukartesting på arrangementsidene og fekk verdifulle tilbakemeldingar. Her er dei viktigaste justeringane vi har gjort og kva vi har lært av tilbakemeldingane.
 
-Vi gjennomførte brukartesting på arrangementsidene og fekk verdifulle tilbakemeldingar. Her er dei viktigaste justeringane vi har gjort.
+## 1. Filtreringsknappen var for lik påmeldingsknappen
 
-## 1. Knappane for filtrering var for lik påmelding-knappen i farge og utforming
-
-Tekst
+Under brukartesten fekk vi tilbakemelding om at filtreringsknappen var blå og såg lik ut som påmeldingsknappen, og at det ikkje var intuitivt med fargevalet på knappene.
 
 <UserFeedback>
-  "Knappen for filtrering “Vis alle” er blå og ser lik ut som “Påmelding”
-  knappen"
+  Knappen for filtrering "Vis alle" er blå og ser lik ut som "Påmelding"
+  knappen
 </UserFeedback>
 
-Tekst
+<UserFeedback>
+  Ikke intuitivt med fargevalg på knappene på sidene. Så ut som allerede var
+  valgt knapp slik som under.
+</UserFeedback>
 
 <Figure
   src="/images/posts/justeringar-arrangement-2026-2/buttons-before.png"
-  alt="Eksempel på midtstilt innhald på framsida"
-  caption="Før justeringane."
+  alt="Skjermbilete som viser filtreringsknappen og påmeldingsknappen med same blå farge og visuelle tyngde"
+  caption="Før: Filtreringsknappen og påmeldingsknappen hadde lik farge og uttrykk."
 />
 
-Tekst
+Påmelding er ei primærhandling på sida, medan filtrering er ei støttefunksjon.
+Når begge knappane har same farge og visuelle tyngde, kan det bli uklart kva som er viktigast – og kva som faktisk melder deg på arrangementet.
+Her er det rett og slett litt problem med det visuelle hierarkiet på sida, der det ikkje er tydeleg nok kva som er hovudhandlinga og kva som er sekundærhandlinga.
+
+Me la og merke til at datoen for arrangementet var i ein blå boks, noko som kunne få det til å sjå ut som ein klikkbar knapp, og dermed skape forvirring for brukarane.
 
 <Figure
   src="/images/posts/justeringar-arrangement-2026-2/buttons-after.png"
-  alt="Eksempel på midtstilt innhald på framsida"
-  caption="Etter justeringane."
+  alt="Skjermbilete som viser tydeleg skilje mellom påmeldingsknapp i blått og filtreringsknapp i nøytral farge"
+  caption="Etter: Tydelegare skilje mellom primær- og sekundærhandling."
 />
 
-<UserFeedback>
-  "Ikke intuitivt med fargevalg på knappene på sidene. Så ut som allerede var
-  valgt knapp slik som under."
-</UserFeedback>
+Her ser du endringane me har gjort for å skape eit tydelegare visuelt hierarki og redusere forvirringa mellom påmeldingsknappen og filtreringsknappen.
+No er det kun påmeldingsknappen som har den blå fargen, medan filtreringsknappen har ein meir nøytral farge, noko som gjer det enklare for brukarane å forstå kva som er hovudhandlinga på sida.
+I tillegg har me fjerna den blå boksen rundt datoen for å unngå at det ser ut som ein klikkbar knapp.
 
-Fyll ut kva de gjorde for å løyse dette.
+Me gjorde og litt forbetringar på sida ved å venstrejustere innhaldet og fjerne den midtstilte layouten, for å skape eit meir ryddig og oversiktleg design som er enklare å navigere for brukarane.
+Det blei litt rart når innhaldet låg midtstilt, og det var ikkje så lett å skumme gjennom innhaldet og få ein god oversikt over programmet og dei viktigaste tidspunkta.
 
 ## 2. Forventa å finne påmeldingsknappen i botn av programsida
 
+Ein brukar forventa å finne påmeldingsknappen i botn av programsida, og det var ikkje intuitivt for dei at den var plassert i toppen.
+Dette kan tyde på at brukarane har ein mental modell der dei forventar å finne påmeldingsknappen etter å ha lest gjennom programmet og fått ein oversikt over innhaldet.
+
 <UserFeedback>
-  «Finner arr. oversikt og så riktig side, ser på programmet – ser etter
-  påmeldingsknapp i bunnen av programsiden. Der finner hun ingen ting – så ser
-  hun.»
+  Forventa å finne påmeldingsknappen i botn av programsida etter å ha lest i gjennom innholdet.
 </UserFeedback>
+
+For å imøtekomme denne forventininga, har me lagt til ein ekstra påmeldingsknapp i botn av programsida, slik at det blir enklare for brukarane å melde seg på uansett kor dei er i programmet.
+Dette gir også ein betre flyt for brukarane, der dei kan lese gjennom programmet og deretter enkelt finne påmeldingsknappen når dei er klare til å melde seg på.
+Dei treng slik ikkje skrolle tilbake til toppen av sida for å finne påmeldingsknappen, noko som kan vere frustrerande og føre til at dei gir opp påmeldingsprosessen.
+
+
 
 ## 3. Forventa å kunne filtrere på dag 1 og dag 2 i programmet
 
@@ -60,21 +72,90 @@ Fyll ut kva de gjorde for å løyse dette.
   "Burde det stå dag 1 og dag to eller dato på knappene for filtrering?"
 </UserFeedback>
 
-## 4. Datofelt på arrangement framsida såg klikkbare ut
+## 4. Datofelt såg klikkbart ut på framsida
 
-## 5. Vanskelig å finne praktisk informasjon om arrangementet
+Me fekk inn tilbakemeldingar om at datofeltet på framsida såg klikkbart ut, og at det kunne skape forvirring for brukarane.
+Dette kan tyde på at det visuelle designet av datofeltet ikkje var klart nok,
+og at det kunne bli oppfatta som ein knapp eller lenke som brukaren kunne klikke på for å få meir informasjon eller utføre ein handling.
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/tags-before.png"
+  alt="Skjermbilete som viser datofeltet med ein blå sirkel rundt ikonet, som kan sjå ut som ein klikkbar knapp"
+  caption="Før: Datofeltet såg klikkbart ut."
+/>
+
+Det er ein blå sirkel rundt ikonet for datoen, og det kan få det til å sjå ut som ein klikkbar knapp.
+
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/tags-after.png"
+  alt="Skjermbilete som viser datofeltet utan blå sirkel, klart ikkje-klikkbart"
+  caption="Etter: Datofeltet ser ikkje lenger klikkbart ut."
+/>
+
+For å løse dette problemet, har me fjerna den blå sirkelen rundt ikonet for datoen, og endra det visuelle designet slik at det ikkje lenger ser ut som ein klikkbar knapp.
+
+
+## 5. Vanskeleg å finne praktisk informasjon om arrangementet
+
+Me fekk tilbakemeldingar om at det var vanskeleg å finne praktisk informasjon om arrangementet, og at det kunne vere frustrerande for brukarane å måtte lete gjennom nyheitsbolken for å finne denne informasjonen.
 
 <UserFeedback>
-  "Blir mye klikk, hadde ikke forventet at den praktiske infoen lå som en slags
+  Blir mye klikk, hadde ikke forventet at den praktiske infoen lå som en slags
   nyhetssak – burde kanskje ligget under påmelding eller program, ikke som en
-  del av nyhetsbolk lenger ned, forsvinner i nyhetssaker."
+  del av nyhetsbolk lenger ned, forsvinner i nyhetssaker.
 </UserFeedback>
 
-## 6. Gi bedre oversikt over programmet
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/info-before.png"
+  alt="Skjermbilete som viser praktisk informasjon skjult som ein del av nyheitsbolken"
+  caption="Før: Praktisk informasjon var vanskeleg å finne."
+/>
+
+I dag ligg den praktiske informasjonen som ein del av nyheitsbolken, og det kan vere lett for brukarane å overse denne informasjonen når dei skummar gjennom nyheitsinnlegga.
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/info-after.png"
+  alt="Skjermbilete som viser praktisk informasjon framheva på ein synleg plass øvst på sida"
+  caption="Etter: Praktisk informasjon er lettare å finne."
+/>
+
+For å løse dette problemet, har me flytta den praktiske informasjonen til ein meir synleg plass på sida, slik at det blir enklare for brukarane å finne denne informasjonen utan å måtte lete gjennom nyheitsbolken.
+
+## 6. Gje betre oversikt over programmet
+
+Det kom inn tilbakemeldingar om at det blei veldig mykje tekst og skrolling på programsida, og at det kunne vere vanskeleg for brukarane å få ein god oversikt over programmet og dei viktigaste tidspunkta.
 
 <UserFeedback>
-  "Sammendrag – uten så mye tekst – ønsket en boks på siden med komplett
-  oversikt og hovedtidspunkter."
+  Sammendrag – uten så mye tekst – ønsket en boks på siden med komplett
+  oversikt og hovedtidspunkter.
 </UserFeedback>
 
-<UserFeedback>"Smørbrødliste med oversikt over hva som finnes."</UserFeedback>
+<UserFeedback>Smørbrødliste med oversikt over hva som finnes.</UserFeedback>
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/program-before.png"
+  alt="Skjermbilete som viser programsida med alle programpostar opne og lang skrolling"
+  caption="Før: Programmet var vanskeleg å få oversikt over."
+/>
+
+I dag ligg alle programpostane opne slik at det blir veldig mykje skrolling for å få ein fullstendig oversikt over programmet, og det kan vere vanskeleg for brukarane å få ein god oversikt over dei viktigaste tidspunkta og programpostane.
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/program-after.png"
+  alt="Skjermbilete som viser programsida med lukka programpostar og kompakt oversikt"
+  caption="Etter: Programmet er lettare å få oversikt over."
+/>
+
+For å løse dette problemet, har me endra designet på programsida slik at alle programpostane er lukka som standard,
+og at brukarane kan klikke på dei for å opne og få meir informasjon om kvar programpost.
+Dette gir ein betre oversikt over programmet, og det blir enklare for brukarane å finne dei viktigaste tidspunkta og programpostane utan å måtte skrolle gjennom alt innhaldet.
+
+Me tok og å gjorde litt endringar på visninga av personane i bloggpostane. I dag ligg teksten midtstilt under bileta,
+og det kan bli litt rotete og vanskeleg å få ein god oversikt over personane og kva dei skal snakke om.
+I det nye designet har me venstrejustert teksten under bileta, og det gir ein betre oversikt og gjer det enklare for brukarane å skumme gjennom informasjonen om personane og kva dei skal snakke om.
+
+## Oppsummering
+Gjennom brukartesting har me fått verdifulle tilbakemeldingar som har hjelpt oss med å identifisere og løse fleire problemområde på arrangementsidene.
+Ved å justere det visuelle hierarkiet, legge til ekstra påmeldingsknappar, og forbetre oversikten over programmet, har me gjort det enklare for brukarane å navigere og finne den informasjonen dei treng for å melde seg på og delta i arrangementet.
+Me vil fortsette å gjennomføre brukartesting og samle tilbakemeldingar for å kontinuerleg forbetre brukaropplevelsen på arrangementsidene og sikre at dei møter behova og forventningane til brukarane våre.
