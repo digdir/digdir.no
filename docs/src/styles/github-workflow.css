@@ -228,7 +228,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eef2ff;
+  background: white;
   color: var(--color-primary, #1e40af);
   border-radius: 10px;
 }
@@ -245,6 +245,7 @@
   font-style: italic;
   color: var(--color-text, #111);
   margin: 0 0 4px;
+  margin-bottom: 4px !important;
 }
 
 .criteria-body p {

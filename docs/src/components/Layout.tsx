@@ -75,8 +75,7 @@ export default function Layout() {
       </main>
       <footer className="footer">
         <p>
-          &copy; {new Date().getFullYear()} digdir.no-teamet. Laga av Vilde og
-          Øyvind.
+          &copy; {new Date().getFullYear()} digdir.no-teamet
         </p>
       </footer>
     </div>

@@ -258,7 +258,10 @@ export default function GitHubWorkflow() {
               <div
                 key={col.name}
                 className="board-column"
-                style={{ backgroundColor: col.color + "30" }}
+                style={{
+                  backgroundColor: col.color + "30",
+                  border: `1.5px solid ${col.color}`,
+                }}
               >
                 <div className="board-column-header">
                   <span className="board-column-name">{col.name}</span>

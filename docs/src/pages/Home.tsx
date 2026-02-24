@@ -10,7 +10,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>
-            Velkommen til sida for{" "}
+            Velkommen inn til oss i {" "}
             <span className="hero-highlight">digdir.no</span>-teamet
           </h1>
           <p>
@@ -23,7 +23,7 @@ export default function Home() {
             <span className="hero-highlight" style={{ color: "#252525" }}>
               samarbeid.digdir.no
             </span>
-            . Kva vi endrar, kvifor vi gjer det og kva som kjem.
+            . Kva vi endrar, kvifor vi gjer det og kva som kjem. Vi håpar det kan vere nyttig for andre som jobbar med offentlege nettsider, og at det kan bidra til meir openheit rundt arbeidet vårt.
           </p>
         </div>
         <div className="hero-visual">
