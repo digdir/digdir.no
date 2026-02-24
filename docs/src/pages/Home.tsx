@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       <div id="posts" className="posts-section-header">
-        <h2>Siste innlegg</h2>
+        <h2>Siste blogginnlegg</h2>
         <div className="posts-section-line" />
       </div>
 
