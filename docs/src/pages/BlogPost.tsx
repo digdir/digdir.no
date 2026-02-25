@@ -13,7 +13,7 @@ export default function BlogPost() {
         <h1>Innlegg ikkje funne</h1>
         <p>
           Beklagar, me fann ikkje det innlegget.{" "}
-          <Link to="/">Gå tilbake til bloggen</Link>.
+          <Link to="/">Gå tilbake til bloggen</Link>
         </p>
       </div>
     );
