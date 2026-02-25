@@ -63,7 +63,7 @@ valgt knapp slik som under.`})}),`
 `,u.jsx(c.p,{children:`Påmelding er ei primærhandling på sida, medan filtrering er ei støttefunksjon.
 Når begge knappane har same farge og visuelle tyngde, kan det bli uklart kva som er viktigast – og kva som faktisk melder deg på arrangementet.
 Her er det rett og slett litt problem med det visuelle hierarkiet på sida, der det ikkje er tydeleg nok kva som er hovudhandlinga og kva som er sekundærhandlinga.`}),`
-`,u.jsx(c.p,{children:"Me la og merke til at datoen for arrangementet var i ein blå boks, noko som kunne få det til å sjå ut som ein klikkbar knapp, og dermed skape forvirring for brukarane."}),`
+`,u.jsx(c.p,{children:"Me la og merke til at datoen for arrangementet var i ein blå boks, noko som kunne få det til å sjå ut som ein klikkbar knapp, og dermed skape forvirring for brukarane"}),`
 `,u.jsx(Ke,{src:"/images/posts/justeringar-arrangement-2026-2/buttons-after.png",alt:"Skjermbilete som viser tydeleg skilje mellom påmeldingsknapp i blått og filtreringsknapp i nøytral farge",caption:"Etter: Tydelegare skilje mellom primær- og sekundærhandling."}),`
 `,u.jsx(c.p,{children:`Her ser du endringane me har gjort for å skape eit tydelegare visuelt hierarki og redusere forvirringa mellom påmeldingsknappen og filtreringsknappen.
 No er det kun påmeldingsknappen som har den blå fargen, medan filtreringsknappen har ein meir nøytral farge, noko som gjer det enklare for brukarane å forstå kva som er hovudhandlinga på sida.
