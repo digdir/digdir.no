@@ -27,3 +27,9 @@ Dette GitHub-prosjektet ([digdir.no boardet](https://github.com/orgs/digdir/proj
 
 Team digdir.no består av utviklarar, designarar og innhaldsressursar frå Digdir.  
 For spørsmål eller forslag til endringar, opprett eit [issue](https://github.com/digdir/digdir.no/issues/new/choose) eller kontakt teamet via Digdirs interne kanalar.
+
+## Meir om teamet
+
+Vi har samla meir informasjon om kven vi er, korleis vi jobbar og kva vi har levert på vår GitHub Pages-side:
+
+👉 https://digdir.github.io/digdir.no/
