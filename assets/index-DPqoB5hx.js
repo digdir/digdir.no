@@ -89,6 +89,7 @@ og at det kunne bli oppfatta som ein knapp eller lenke som brukaren kunne klikke
 `,u.jsx(Ke,{src:"/images/posts/justeringar-arrangement-2026-2/tags-after.png",alt:"Skjermbilete som viser datofeltet utan blå sirkel, klart ikkje-klikkbart",caption:"Etter: Datofeltet ser ikkje lenger klikkbart ut."}),`
 `,u.jsx(c.p,{children:"For å løse dette problemet, har me fjerna den blå sirkelen rundt ikonet for datoen, og endra det visuelle designet slik at det ikkje lenger ser ut som ein klikkbar knapp."}),`
 `,u.jsx(c.h2,{children:"5. Feil rekkjefølge på titlane på framsida av arrangementet"}),`
+`,u.jsx(c.p,{children:"Tekst"}),`
 `,u.jsx(c.h2,{children:"6. Vanskeleg å finne praktisk informasjon om arrangementet"}),`
 `,u.jsx(c.p,{children:"Me fekk tilbakemeldingar om at det var vanskeleg å finne praktisk informasjon om arrangementet, og at det kunne vere frustrerande for brukarane å måtte lete gjennom nyheitsbolken for å finne denne informasjonen."}),`
 `,u.jsx(Pl,{children:u.jsx(c.p,{children:`Blir mye klikk, hadde ikke forventet at den praktiske infoen lå som en slags
