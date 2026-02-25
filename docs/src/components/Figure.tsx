@@ -1,3 +1,4 @@
+import { assetUrl } from "../lib/assetUrl";
 import "../styles/figure.css";
 
 interface FigureProps {
@@ -9,7 +10,7 @@ interface FigureProps {
 export default function Figure({ src, alt, caption }: FigureProps) {
   return (
     <figure className="figure">
-      <img src={src} alt={alt} className="figure-img" />
+      <img src={assetUrl(src)} alt={alt} className="figure-img" />
       <figcaption className="figure-caption">{caption}</figcaption>
     </figure>
   );

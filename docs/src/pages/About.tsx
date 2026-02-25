@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { assetUrl } from "../lib/assetUrl";
 import "../styles/page.css";
 import "../styles/about.css";
 
@@ -100,7 +101,7 @@ export default function About() {
               <div className="team-card" key={person.name}>
                 <img
                   className="team-avatar"
-                  src={person.image}
+                  src={assetUrl(person.image)}
                   alt={person.name}
                   width="48"
                   height="48"
