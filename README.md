@@ -21,7 +21,7 @@ Arbeidet omfattar blant anna:
 
 ## Kva dette prosjektet inneheld
 
-Dette GitHub-prosjektet ([digdir.no boardet](https://github.com/orgs/digdir/projects/49)) gir oversikt over pågåande arbeid, prioriteringar og status for oppgåver i teamet. Oppgåver her kan omfatte alt frå små feilrettingar til større utviklingsinitiativ.
+Dette GitHub-prosjektet ([digdir.no boardet](https://github.com/orgs/digdir/projects/49)) gir oversikt over pågåande arbeid, prioriteringar og status for oppgåver i teamet. Oppgåver her kan omfatte alt frå små feilrettingar til større utviklingsinitiativ. 
 
 ## Kontakt og bidrag
 
