@@ -242,7 +242,6 @@
 
 .criteria-question {
   font-weight: 500;
-  font-style: italic;
   color: var(--color-text, #111);
   margin: 0 0 4px;
   margin-bottom: 4px !important;

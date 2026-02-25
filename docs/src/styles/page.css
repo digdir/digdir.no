@@ -32,6 +32,12 @@
   margin-bottom: var(--spacing-2xl);
 }
 
+.page-intro a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .page-section {
   margin-bottom: var(--spacing-2xl);
 }
