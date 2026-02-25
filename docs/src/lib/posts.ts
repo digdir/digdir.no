@@ -6,6 +6,7 @@ const modules = import.meta.glob<{
     image: string;
     date: string;
     slug: string;
+    draft?: boolean;
   };
   default: React.ComponentType;
 }>("../posts/*.mdx", { eager: true });
@@ -19,11 +20,14 @@ export interface PostMeta {
 }
 
 export interface Post extends PostMeta {
-  Component: React.ComponentType;
+  Component: React.ComponentType<{
+    components?: Record<string, React.ComponentType<any>>;
+  }>;
 }
 
 export function getAllPosts(): Post[] {
   return Object.values(modules)
+    .filter((mod) => !mod.frontmatter.draft)
     .map((mod) => ({
       ...mod.frontmatter,
       Component: mod.default,

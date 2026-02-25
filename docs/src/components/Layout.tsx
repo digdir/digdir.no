@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import NavDropdown from "./NavDropdown";
+import { assetUrl } from "../lib/assetUrl";
 import "../styles/layout.css";
 
 const designfundamentItems = [
@@ -36,7 +37,7 @@ export default function Layout() {
     <div className="layout">
       <header className="header">
         <Link to="/" className="logo">
-          <img src="/images/logo.png" alt="" width="36" height="36" />
+          <img src={assetUrl("/images/logo.png")} alt="" width="36" height="36" />
           <span className="logo-text">
             <span className="logo-primary">digdir.no</span>
             <span className="logo-secondary">teamet</span>

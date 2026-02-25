@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { getAllPosts } from "../lib/posts";
+import { assetUrl } from "../lib/assetUrl";
 import "../styles/home.css";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
         <div className="hero-visual">
           <div className="hero-image-wrapper">
-            <img src="/images/hero-image.png" alt="Designarbeidsområde" />
+            <img src={assetUrl("/images/hero-image.png")} alt="Designarbeidsområde" />
           </div>
         </div>
       </section>
@@ -42,7 +43,7 @@ export default function Home() {
         {posts.map((post) => (
           <Link to={`/blog/${post.slug}`} key={post.slug} className="post-card">
             <div className="post-card-image">
-              <img src={post.image} alt={post.title} />
+              <img src={assetUrl(post.image)} alt={post.title} />
             </div>
             <div className="post-card-content">
               <time dateTime={post.date}>

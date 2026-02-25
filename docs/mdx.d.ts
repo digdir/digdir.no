@@ -7,8 +7,11 @@ declare module "*.mdx" {
     image: string;
     date: string;
     slug: string;
+    draft?: boolean;
   };
 
-  const MDXComponent: ComponentType;
+  const MDXComponent: ComponentType<{
+    components?: Record<string, ComponentType<any>>;
+  }>;
   export default MDXComponent;
 }

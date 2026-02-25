@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/page.css";
 import "../styles/github-workflow.css";
 
@@ -505,9 +506,9 @@ export default function GitHubWorkflow() {
             <strong>Stage</strong> er eit custom field i GitHub Projects som
             fortel kvar i utviklingsprosessen eit issue eller ein epic befinn
             seg. Det speglar dei ni stega i{" "}
-            <a href="/designfundament/utviklingsprosess">
+            <Link to="/designfundament/utviklingsprosess">
               utviklingsprosessen vår
-            </a>{" "}
+            </Link>{" "}
             og gjer det mogleg å filtrere og sortere boardet etter prosessfase,
             uavhengig av kva kolonne oppgåva ligg i.
           </p>
