@@ -10,6 +10,8 @@
   border: none;
   cursor: pointer;
   font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .nav-dropdown-icon {

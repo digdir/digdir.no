@@ -47,7 +47,8 @@
 
 .nav {
   display: flex;
-  gap: var(--spacing-lg);
+  align-items: center;
+  gap: var(--spacing-md);
 }
 
 .nav-link {
@@ -64,6 +65,12 @@
 .nav-link:hover {
   color: var(--color-text);
   background: var(--color-accent-bg);
+}
+
+.nav-github {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-xs);
 }
 
 .main {
