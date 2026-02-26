@@ -85,9 +85,9 @@ Dei treng slik ikkje skrolle tilbake til toppen av sida for å finne påmeldings
 Dette kan tyde på at det visuelle designet av datofeltet ikkje var klart nok,
 og at det kunne bli oppfatta som ein knapp eller lenke som brukaren kunne klikke på for å få meir informasjon eller utføre ein handling.`}),`
 `,u.jsx(Ke,{src:"/images/posts/justeringar-arrangement-2026-2/tags-before.png",alt:"Skjermbilete som viser datofeltet med ein blå sirkel rundt ikonet, som kan sjå ut som ein klikkbar knapp",caption:"Før: Datofeltet såg klikkbart ut."}),`
-`,u.jsx(c.p,{children:"Det er ein blå sirkel rundt ikonet for datoen, og det kan få det til å sjå ut som ein klikkbar knapp."}),`
+`,u.jsx(c.p,{children:"Som du ser i bildet over er det ein blå sirkel rundt ikonet for datoen, og det kan få det til å sjå ut som ein klikkbar knapp."}),`
 `,u.jsx(Ke,{src:"/images/posts/justeringar-arrangement-2026-2/tags-after.png",alt:"Skjermbilete som viser datofeltet utan blå sirkel, klart ikkje-klikkbart",caption:"Etter: Datofeltet ser ikkje lenger klikkbart ut."}),`
-`,u.jsx(c.p,{children:"For å løse dette problemet, har me fjerna den blå sirkelen rundt ikonet for datoen, og endra det visuelle designet slik at det ikkje lenger ser ut som ein klikkbar knapp."}),`
+`,u.jsx(c.p,{children:"For å løyse dette problemet, har me fjerna den blå sirkelen, og slik endra det visuelle designet slik at det ikkje lenger ser ut som ein klikkbar knapp."}),`
 `,u.jsx(c.h2,{children:"5. Feil rekkjefølge på titlane på framsida av arrangementet"}),`
 `,u.jsx(c.p,{children:"Tekstt"}),`
 `,u.jsx(c.h2,{children:"6. Vanskeleg å finne praktisk informasjon om arrangementet"}),`
