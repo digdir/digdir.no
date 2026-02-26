@@ -63,12 +63,12 @@ valgt knapp slik som under.`})}),`
 `,r.jsx(o.p,{children:`Påmelding er ei primærhandling på sida, medan filtrering er ei støttefunksjon.
 Når begge knappane har same farge og visuelle tyngde, kan det bli uklart kva som er viktigast – og kva som faktisk melder deg på arrangementet.
 Her er det rett og slett litt problem med det visuelle hierarkiet på sida, der det ikkje er tydeleg nok kva som er hovudhandlinga og kva som er sekundærhandlinga.`}),`
-`,r.jsx(o.p,{children:"Me la òg merke til at datoen for arrangementet var i ein blå boks, noko som kunne få det til å sjå ut som ein klikkbar knapp, og dermed skape forvirring for brukarane."}),`
+`,r.jsx(o.p,{children:"Me la òg merke til at tittelen på dagen for arrangementet var i ein blå boks, noko som kunne få det til å sjå ut som ein klikkbar knapp, og dermed skape forvirring for brukarane."}),`
 `,r.jsx(Te,{src:"/images/posts/justeringar-arrangement-2026-2/buttons-after.png",alt:"Skjermbilete som viser tydeleg skilje mellom påmeldingsknapp i blått og filtreringsknapp i nøytral farge",caption:"Etter: Tydelegare skilje mellom primær- og sekundærhandling."}),`
 `,r.jsx(o.p,{children:`Her ser du endringane me har gjort for å skape eit tydelegare visuelt hierarki og redusere forvirringa mellom påmeldingsknappen og filtreringsknappen.
 No er det berre påmeldingsknappen som har den blå fargen, medan filtreringsknappen har ein meir nøytral farge, noko som gjer det enklare for brukarane å forstå kva som er hovudhandlinga på sida.
 I tillegg har me fjerna den blå boksen rundt datoen for å unngå at det ser ut som ein klikkbar knapp.`}),`
-`,r.jsx(o.p,{children:`Me gjorde òg litt forbetringar på sida ved å venstrejustere innhaldet og fjerne den midtstilte layouten, for å skape eit meir ryddig og oversiktleg design som er enklare å navigere for brukarane.
+`,r.jsx(o.p,{children:`Me gjorde òg litt forbetringar på sida ved å venstrejustere innhaldet, for å skape eit meir ryddig og oversiktleg design som er enklare å navigere for brukarane.
 Det blei litt rart når innhaldet låg midtstilt, og det var ikkje så lett å skumme gjennom innhaldet og få ein god oversikt over programmet og dei viktigaste tidspunkta.`}),`
 `,r.jsx(o.h2,{children:"2. Forventa å finne påmeldingsknappen i botn av programsida"}),`
 `,r.jsx(o.p,{children:`Ein brukar forventa å finne påmeldingsknappen i botn av programsida, og det var ikkje intuitivt for dei at den var plassert i toppen.
