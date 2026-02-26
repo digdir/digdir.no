@@ -86,7 +86,7 @@ Dei treng slik ikkje skrolle tilbake til toppen av sida for å finne påmeldings
 og det kan vere litt vagt og ikkje så intuitivt for brukarane å forstå at det betyr at dei får opp alle programpostane for alle dagane i arrangementet.
 Dei andre knappane som filtrerer på dagane har ikkje datoen i teksten sin, som kan gjere det litt vanskelegare å koble knappen til den spesifikke dagen i arrangementet.`]}),`
 `,r.jsx(De,{src:"/images/posts/justeringar-arrangement-2026-2/filter-text-after.png",alt:"Skjermbilete som viser knappane for filtrering av programmet etter endring, med meir beskrivande tekst",caption:"Etter: Teksten på knappane for filtrering av programmet er meir beskrivande."}),`
-`,r.jsxs(o.p,{children:["For å løyse dette problemet, har me endra teksten på knappen for å vise alle dagane til ",r.jsx(o.strong,{children:'"Alle dager"'}),`,
+`,r.jsxs(o.p,{children:["For å løyse dette problemet, har me endra teksten på knappen for å vise alle dagane til ",r.jsx(o.strong,{children:'"Alle dagene"'}),`,
 og lagt til datoen i teksten på dei andre knappane som filtrerer på dagar.
 Dette trur me vil gjere det enklare for brukarane å forstå kva dei ulike filtreringsalternativa betyr, og hjelpe dei med å finne fram til den informasjonen dei er interessert i på ein meir intuitiv måte.`]}),`
 `,r.jsx(o.h2,{children:"4. Datofelt såg klikkbart ut på framsida"}),`
