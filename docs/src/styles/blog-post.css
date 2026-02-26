@@ -72,6 +72,12 @@
   margin-bottom: var(--spacing-2xl);
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border: 1px solid #d0d7e0;
+}
+
+.blog-post-content img {
+  border: 1px solid #d0d7e0;
+  border-radius: var(--radius-md);
 }
 
 .blog-post-content {

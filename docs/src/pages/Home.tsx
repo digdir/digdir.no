@@ -4,7 +4,7 @@ import { assetUrl } from "../lib/assetUrl";
 import "../styles/home.css";
 
 export default function Home() {
-  const posts = getAllPosts();
+  const posts = getAllPosts().slice(0, 3);
 
   return (
     <div className="home">
@@ -59,6 +59,12 @@ export default function Home() {
           </Link>
         ))}
       </section>
+
+      <div className="posts-see-all">
+        <Link to="/blogg" className="posts-see-all-link">
+          Sjå alle innlegg &rarr;
+        </Link>
+      </div>
     </div>
   );
 }

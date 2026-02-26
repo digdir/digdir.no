@@ -13,7 +13,7 @@ export default function BlogPost() {
         <h1>Innlegg ikkje funne</h1>
         <p>
           Beklagar, me fann ikkje det innlegget.{" "}
-          <Link to="/">Gå tilbake til bloggen</Link>
+          <Link to="/blogg">Gå tilbake til bloggen</Link>
         </p>
       </div>
     );
@@ -73,7 +73,7 @@ export default function BlogPost() {
         }} />
       </div>
       <footer className="blog-post-footer">
-        <Link to="/">&larr; Tilbake til alle innlegg</Link>
+        <Link to="/blogg">&larr; Tilbake til alle innlegg</Link>
       </footer>
     </article>
   );

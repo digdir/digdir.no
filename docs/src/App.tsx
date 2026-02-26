@@ -6,6 +6,7 @@ import HowWeDesign from "./pages/HowWeDesign";
 import DesignFoundation from "./pages/DesignFoundation";
 import DesignFoundationPage from "./pages/DesignFoundationPage";
 import GitHubWorkflow from "./pages/GitHubWorkflow";
+import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           element={<DesignFoundationPage />}
         />
         <Route path="/arbeidsflyt" element={<GitHubWorkflow />} />
+        <Route path="/blogg" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         {/* Redirect old route */}
         <Route path="/how-we-design" element={<HowWeDesign />} />

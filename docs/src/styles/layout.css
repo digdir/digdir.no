@@ -83,6 +83,10 @@
   margin-top: var(--spacing-3xl);
 }
 
+.footer-disclaimer {
+  margin-bottom: var(--spacing-sm);
+}
+
 @media (max-width: 640px) {
   .header {
     padding: var(--spacing-md);

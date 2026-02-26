@@ -226,6 +226,22 @@
   line-height: 1.6;
 }
 
+.posts-see-all {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+}
+
+.posts-see-all-link {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  transition: color 0.2s;
+}
+
+.posts-see-all-link:hover {
+  color: var(--color-primary);
+}
+
 /* ── Responsive ──────────────────────────────────────────── */
 
 @media (max-width: 768px) {

@@ -1,0 +1,22 @@
+.blog {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-2xl) 0;
+}
+
+.blog-header {
+  margin-bottom: var(--spacing-2xl);
+  max-width: 640px;
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--spacing-md);
+}
+
+.blog-header p {
+  color: var(--color-text-muted);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}

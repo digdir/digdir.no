@@ -1,6 +1,6 @@
 ---
 title: "Justeringar på arrangementsidene etter brukartesting"
-description: "Etter å ha gjennomført brukartesting på arrangementsidene, har vi identifisert fleire område for forbetring. I dette innlegget deler vi dei viktigaste justeringane vi har gjort for å forbetre brukaropplevelsen."
+description: "Etter å ha gjennomført brukartesting på arrangementsidene, har me identifisert fleire område for forbetring. I dette innlegget deler me dei viktigaste justeringane me har gjort for å forbetre brukaropplevelsen."
 image: "/images/posts/kurs-bilde.png"
 date: "2026-02-25"
 slug: "justeringar-paa-arrangementmal-2026-02"
@@ -10,11 +10,11 @@ import UserFeedback from "../components/UserFeedback";
 import WorkInProgress from "../components/WorkInProgress";
 import Figure from "../components/Figure";
 
-Vi gjennomførte brukartesting på arrangementsidene og fekk verdifulle tilbakemeldingar. Her er dei viktigaste justeringane vi har gjort og kva vi har lært av tilbakemeldingane.
+Me gjennomførte brukartesting på arrangementsidene og fekk verdifulle tilbakemeldingar. Her er dei viktigaste justeringane me har gjort og kva me har lært av tilbakemeldingane.
 
 ## 1. Filtreringsknappen var for lik påmeldingsknappen
 
-Under brukartesten fekk vi tilbakemelding om at filtreringsknappen var blå og såg lik ut som påmeldingsknappen, og at det ikkje var intuitivt med fargevalet på knappene.
+Under brukartesten fekk me tilbakemelding om at filtreringsknappen var blå og såg lik ut som påmeldingsknappen, og at det ikkje var intuitivt med fargevalet på knappane.
 
 <UserFeedback>
   Knappen for filtrering "Vis alle" er blå og ser lik ut som "Påmelding" knappen
@@ -35,7 +35,7 @@ Påmelding er ei primærhandling på sida, medan filtrering er ei støttefunksjo
 Når begge knappane har same farge og visuelle tyngde, kan det bli uklart kva som er viktigast – og kva som faktisk melder deg på arrangementet.
 Her er det rett og slett litt problem med det visuelle hierarkiet på sida, der det ikkje er tydeleg nok kva som er hovudhandlinga og kva som er sekundærhandlinga.
 
-Me la og merke til at datoen for arrangementet var i ein blå boks, noko som kunne få det til å sjå ut som ein klikkbar knapp, og dermed skape forvirring for brukarane
+Me la òg merke til at datoen for arrangementet var i ein blå boks, noko som kunne få det til å sjå ut som ein klikkbar knapp, og dermed skape forvirring for brukarane.
 
 <Figure
   src="/images/posts/justeringar-arrangement-2026-2/buttons-after.png"
@@ -44,10 +44,10 @@ Me la og merke til at datoen for arrangementet var i ein blå boks, noko som kun
 />
 
 Her ser du endringane me har gjort for å skape eit tydelegare visuelt hierarki og redusere forvirringa mellom påmeldingsknappen og filtreringsknappen.
-No er det kun påmeldingsknappen som har den blå fargen, medan filtreringsknappen har ein meir nøytral farge, noko som gjer det enklare for brukarane å forstå kva som er hovudhandlinga på sida.
+No er det berre påmeldingsknappen som har den blå fargen, medan filtreringsknappen har ein meir nøytral farge, noko som gjer det enklare for brukarane å forstå kva som er hovudhandlinga på sida.
 I tillegg har me fjerna den blå boksen rundt datoen for å unngå at det ser ut som ein klikkbar knapp.
 
-Me gjorde og litt forbetringar på sida ved å venstrejustere innhaldet og fjerne den midtstilte layouten, for å skape eit meir ryddig og oversiktleg design som er enklare å navigere for brukarane.
+Me gjorde òg litt forbetringar på sida ved å venstrejustere innhaldet og fjerne den midtstilte layouten, for å skape eit meir ryddig og oversiktleg design som er enklare å navigere for brukarane.
 Det blei litt rart når innhaldet låg midtstilt, og det var ikkje så lett å skumme gjennom innhaldet og få ein god oversikt over programmet og dei viktigaste tidspunkta.
 
 ## 2. Forventa å finne påmeldingsknappen i botn av programsida
@@ -60,15 +60,39 @@ Dette kan tyde på at brukarane har ein mental modell der dei forventar å finne
   gjennom innholdet.
 </UserFeedback>
 
-For å imøtekomme denne forventininga, har me lagt til ein ekstra påmeldingsknapp i botn av programsida, slik at det blir enklare for brukarane å melde seg på uansett kor dei er i programmet.
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/bottom.png"
+  alt="Skjermbilete som viser påmeldingsknappen plassert i botn av programsida, lett å finne etter å ha lest gjennom programmet"
+  caption="Påmeldingsknappen er no lett å finne i botn av programsida."
+/>
+
+For å imøtekomme denne forventninga, har me lagt til ein ekstra påmeldingsknapp i botn av programsida, slik at det blir enklare for brukarane å melde seg på uansett kor dei er i programmet.
 Dette gir også ein betre flyt for brukarane, der dei kan lese gjennom programmet og deretter enkelt finne påmeldingsknappen når dei er klare til å melde seg på.
 Dei treng slik ikkje skrolle tilbake til toppen av sida for å finne påmeldingsknappen, noko som kan vere frustrerande og føre til at dei gir opp påmeldingsprosessen.
 
-## 3. Forventa å kunne filtrere på dag 1 og dag 2 i programmet
+## 3. Betre tekst på knappane for filtrering av programmet
 
-<UserFeedback>
-  "Burde det stå dag 1 og dag to eller dato på knappene for filtrering?"
-</UserFeedback>
+Me fekk tilbakemeldingar om at teksten på knappane for filtrering av programmet kunne vere meir beskrivande, og at det kunne hjelpe brukarane med å forstå kva dei ulike filtreringsalternativa innebar.
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/filter-text-before.png"
+  alt="Skjermbilete som viser knappane for filtrering av programmet før endring, med mindre beskrivande tekst"
+  caption="Før: Teksten på knappane for filtrering av programmet var mindre beskrivande."
+/>
+
+I dag har knappen for å vise alle dagane teksten **"Vis alle"**,
+og det kan vere litt vagt og ikkje så intuitivt for brukarane å forstå at det betyr at dei får opp alle programpostane for alle dagane i arrangementet.
+Dei andre knappane som filtrerer på dagane har ikkje datoen i teksten sin, som kan gjere det litt vanskelegare å koble knappen til den spesifikke dagen i arrangementet.
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/filter-text-after.png"
+  alt="Skjermbilete som viser knappane for filtrering av programmet etter endring, med meir beskrivande tekst"
+  caption="Etter: Teksten på knappane for filtrering av programmet er meir beskrivande."
+/>
+
+For å løyse dette problemet, har me endra teksten på knappen for å vise alle dagane til **"Alle dager"**,
+og lagt til datoen i teksten på dei andre knappane som filtrerer på dagar.
+Dette trur me vil gjere det enklare for brukarane å forstå kva dei ulike filtreringsalternativa betyr, og hjelpe dei med å finne fram til den informasjonen dei er interessert i på ein meir intuitiv måte.
 
 ## 4. Datofelt såg klikkbart ut på framsida
 
@@ -90,15 +114,33 @@ Som du ser i bildet over er det ein blå sirkel rundt ikonet for datoen, og det 
   caption="Etter: Datofeltet ser ikkje lenger klikkbart ut."
 />
 
-For å løyse dette problemet, har me fjerna den blå sirkelen, og slik endra det visuelle designet slik at det ikkje lenger ser ut som ein klikkbar knapp.
+For å løyse dette problemet, har me fjerna den blå sirkelen, slik at datofeltet ikkje lenger ser ut som ein klikkbar knapp.
 
 ## 5. Feil rekkjefølge på titlane på framsida av arrangementet
 
-Tekstt
+I grensesnittet i Drupal for eit arrangement kan brukaren skrive inn tittel og stikktittel som blir vist på framsida av arrangementet.
+Desse hamna i feil rekkjefølge på framsida, der stikktittelen dukka opp som hovudtittel og tittelen som ein mindre tekst over.
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/titles-before.png"
+  alt="Skjermbilete som viser tittelen og stikktittelen i feil rekkefølge, med tittelen som mindre tittel over stikktittelen"
+  caption="Før: Tittelen og stikktittelen var vist i feil rekkefølge."
+/>
+
+I biletet over ser du at tittelen på sida, **"Digitaliseringskonferansen 2026"**, dukkar opp som ein mindre tekst over **"Balansekunst"** som er stikktittelen.
+Dette skapar eit dårleg visuelt hierarki, der hovudtittelen får mindre plass enn stikktittelen.
+
+<Figure
+  src="/images/posts/justeringar-arrangement-2026-2/titles-after.png"
+  alt="Skjermbilete som viser tittelen og stikktittelen i riktig rekkefølge, med tittelen som hovudtittel og stikktittelen som mindre tittel over"
+  caption="Etter: Tittelen og stikktittelen er vist i riktig rekkefølge."
+/>
+
+For å løyse dette problemet, har me bytta om rekkjefølgen slik at tittelen no er hovudtittel og stikktittelen kjem som ein mindre tekst over.
 
 ## 6. Vanskeleg å finne praktisk informasjon om arrangementet
 
-Me fekk tilbakemeldingar om at det var vanskeleg å finne praktisk informasjon om arrangementet, og at det kunne vere frustrerande for brukarane å måtte lete gjennom nyheitsbolken for å finne denne informasjonen.
+Me fekk tilbakemeldingar om at det var vanskeleg å finne praktisk informasjon om arrangementet, og at det kunne vere frustrerande for brukarane å måtte leite gjennom nyheitsbolken for å finne denne informasjonen.
 
 <UserFeedback>
   Blir mye klikk, hadde ikke forventet at den praktiske infoen lå som en slags
@@ -120,7 +162,11 @@ I dag ligg den praktiske informasjonen som ein del av nyheitsbolken, og det kan 
   caption="Etter: Praktisk informasjon er lettare å finne."
 />
 
-For å løse dette problemet, har me flytta den praktiske informasjonen til ein meir synleg plass på sida, slik at det blir enklare for brukarane å finne denne informasjonen utan å måtte lete gjennom nyheitsbolken.
+For å løyse dette problemet, anbefaler me å flytte den praktiske informasjonen til ein meir synleg plass på sida ved å bruke kampanjemodulen i toppen,
+slik at det blir enklare for brukarane å finne denne informasjonen utan å måtte leite gjennom nyheitsbolken.
+
+Me får sjå om dette løyser problemet, og om det gjer det enklare for brukarane å finne den praktiske informasjonen dei treng for å delta i arrangementet.
+Om ikkje vil me vurdere andre løysingar for å gjere den praktiske informasjonen meir synleg og lettare å finne for brukarane i framtida.
 
 ## 7. Gje betre oversikt over programmet
 
@@ -151,12 +197,12 @@ For å løyse dette problemet, har me endra designet på programsida slik at all
 og at brukarane kan klikke på dei for å opne og få meir informasjon om kvar programpost.
 Dette gir ein betre oversikt over programmet, og det blir enklare for brukarane å finne dei viktigaste tidspunkta og programpostane utan å måtte skrolle gjennom alt innhaldet.
 
-Me tok og å gjorde litt endringar på visninga av personane i bloggpostane. I dag ligg teksten midtstilt under bileta,
+Me gjorde òg litt endringar på visninga av personane i programpostane. I dag ligg teksten midtstilt under bileta,
 og det kan bli litt rotete og vanskeleg å få ein god oversikt over personane og kva dei skal snakke om.
 I det nye designet har me venstrejustert teksten under bileta, og det gir ein betre oversikt og gjer det enklare for brukarane å skumme gjennom informasjonen om personane og kva dei skal snakke om.
 
 ## Oppsummering
 
-Gjennom brukartesting har me fått verdifulle tilbakemeldingar som har hjelpt oss med å identifisere og løse fleire problemområde på arrangementsidene.
+Gjennom brukartesting har me fått verdifulle tilbakemeldingar som har hjelpt oss med å identifisere og løyse fleire problemområde på arrangementsidene.
 Ved å justere det visuelle hierarkiet, legge til ekstra påmeldingsknappar, og forbetre oversikten over programmet, har me gjort det enklare for brukarane å navigere og finne den informasjonen dei treng for å melde seg på og delta i arrangementet.
 Me vil fortsette å gjennomføre brukartesting og samle tilbakemeldingar for å kontinuerleg forbetre brukaropplevelsen på arrangementsidene og sikre at dei møter behova og forventningane til brukarane våre.
