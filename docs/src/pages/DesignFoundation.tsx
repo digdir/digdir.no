@@ -14,7 +14,6 @@ const sections = [
     number: 8,
     title: "Utviklingsprosess",
     slug: "utviklingsprosess",
-    highlight: true,
   },
   { number: 9, title: "Brukartesting", slug: "brukartesting" },
   { number: 10, title: "Måling og evaluering", slug: "maaling-og-evaluering" },

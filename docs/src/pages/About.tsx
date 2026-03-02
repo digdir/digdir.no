@@ -9,49 +9,49 @@ const tocItems = [
   { id: "om-nettsidene", label: "Om nettsidene" },
 ];
 
-
 const team = [
   {
+    name: "Wanda Smalsundmo",
+    title: "Produkteigar",
+    image: "/images/authors/wanda.jpg",
+    ingress:
+      "Overordna ansvar for produktvisjon, strategi og prioriteringar for nettsidene. Sikrar at teamet jobbar med dei rette tinga for å skape verdi for brukarane og organisasjonen.",
+  },
+
+  {
+    name: "Marte Torsdatter Leland",
+    title: "Nettredaktør",
+    image: "/images/authors/marte.jpg",
+    ingress:
+      "Overordna ansvar for innhald og innhaldsstruktur på nettsidene, inkludert etterleving av lovkrav. Leier kjerneteamet av fagredaktørar.",
+  },
+  {
     name: "Øyvind Thune",
-    title: "Design Lead",
-    image: "/images/authors/user1.png",
-    ingress: "Meir informasjon vil komme her.",
+    title: "Design lead",
+    image: "/images/authors/oyvind.png",
+    ingress:
+      "Overordna ansvar for den visuelle retninga og brukaropplevinga på nettsida. Leier designprosessen og koordinerer med Designsystemet.",
   },
   {
-    name: "Vilde Ylvisåker",
-    title: "Grafisk Designer",
-    image: "/images/authors/user2.png",
-    ingress: "Meir informasjon vil komme her.",
+    name: "Sture Kenneth Dingsøyr",
+    title: "Tech lead",
+    image: "/images/authors/sture.jpg",
+    ingress:
+      "Ansvar for teknisk retning og arkitektur på digdir.no. Utviklar frontend og backend, og støttar prosessar og prioriteringar i teamet.",
   },
   {
-    name: "Namn kjem",
-    title: "Rolle kjem",
-    image: "/images/authors/user1.png",
-    ingress: "Meir informasjon vil komme her.",
+    name: "Vilde Ylvisåker Førre",
+    title: "Grafisk designar",
+    image: "/images/authors/vilde.png",
+    ingress:
+      "Ansvar for korrekt bruk av merkevare, visuell profil og typografi. Sikrar brukarvennleg design og god visuell kommunikasjon på nettsida.",
   },
   {
-    name: "Namn kjem",
-    title: "Rolle kjem",
-    image: "/images/authors/user1.png",
-    ingress: "Meir informasjon vil komme her.",
-  },
-  {
-    name: "Namn kjem",
-    title: "Rolle kjem",
-    image: "/images/authors/user1.png",
-    ingress: "Meir informasjon vil komme her.",
-  },
-  {
-    name: "Namn kjem",
-    title: "Rolle kjem",
-    image: "/images/authors/user1.png",
-    ingress: "Meir informasjon vil komme her.",
-  },
-  {
-    name: "Namn kjem",
-    title: "Rolle kjem",
-    image: "/images/authors/user1.png",
-    ingress: "Meir informasjon vil komme her.",
+    name: "Jens Mo",
+    title: "Utviklar",
+    image: "/images/authors/jens.png",
+    ingress:
+      "Ansvar for utvikling og vedlikehald av nettsida, særleg frontend. Bidrar med implementering av ny funksjonalitet, UU og design.",
   },
 ];
 
@@ -91,9 +91,9 @@ export default function About() {
         <section className="page-section">
           <h2 id="motet-teamet">Møt teamet</h2>
           <p>
-            Teamet vårt består av designarar som jobbar med å skape gode og
-            inkluderande digitale opplevingar for alle som besøker nettsidene
-            våre.
+            Vi er eit tverrfagleg team med kompetanse innan design, innhald og
+            utvikling. Vi jobbar tett saman for å skape gode og brukarvennlege
+            nettsider for våre brukarar.
           </p>
 
           <div className="team-section">
@@ -127,9 +127,7 @@ export default function About() {
             <summary className="meeting-summary">
               <div className="meeting-summary-content">
                 <h3>Standup</h3>
-                <span className="meeting-frequency">
-                  Kvar måndag og onsdag
-                </span>
+                <span className="meeting-frequency">Kvar måndag og onsdag</span>
                 <p>
                   Kort og konsist statusmøte der vi går gjennom inbox, epics,
                   roadmap og oppgåveflyt i GitHub-prosjektet.
@@ -170,9 +168,7 @@ export default function About() {
                 <li>
                   Gå gjennom saker som ligg i inbox i Github. Vurdere:
                   <ul>
-                    <li>
-                      Kva som skal flyttast til backlog → «Backlog»
-                    </li>
+                    <li>Kva som skal flyttast til backlog → «Backlog»</li>
                     <li>
                       Kva som ev. ikkje skal prioriterast → «Done» og legg inn
                       kommentar.
@@ -193,7 +189,8 @@ export default function About() {
               <h5>Oppgåveflyt</h5>
               <ol>
                 <li>
-                  Gå gjennom <span className="board-tag board-tag--backlog">Backlog</span>
+                  Gå gjennom{" "}
+                  <span className="board-tag board-tag--backlog">Backlog</span>
                   <ul>
                     <li>
                       Sjå om det ligg issues som treng: Ansvarleg(e), Tags,
@@ -202,23 +199,28 @@ export default function About() {
                     <li>
                       Flytt oppgåver som skal prioriterast i denne perioden til{" "}
                       <span className="board-tag board-tag--todo">Todo</span>.
-                      Vurder om oppgåva krev ein ny Epic eller skal høyre
-                      til ein eksisterande Epic.
+                      Vurder om oppgåva krev ein ny Epic eller skal høyre til
+                      ein eksisterande Epic.
                     </li>
                   </ul>
                 </li>
                 <li>
-                  Gå gjennom <span className="board-tag board-tag--tested">Testa OK</span>
+                  Gå gjennom{" "}
+                  <span className="board-tag board-tag--tested">Testa OK</span>
                   <ul>
                     <li>
-                      Ok å flytte til <span className="board-tag board-tag--done">Done</span>?
+                      Ok å flytte til{" "}
+                      <span className="board-tag board-tag--done">Done</span>?
                     </li>
                     <li>Ved behov: notere når issue skal rullast ut</li>
                     <li>Lukke saker som er avslutta/rulla ut</li>
                   </ul>
                 </li>
                 <li>
-                  Gå gjennom <span className="board-tag board-tag--review">Ready for review</span>
+                  Gå gjennom{" "}
+                  <span className="board-tag board-tag--review">
+                    Ready for review
+                  </span>
                   <ul>
                     <li>
                       Sjå at oppgåva er assigna til den/dei som skal teste
@@ -229,11 +231,15 @@ export default function About() {
                       <ul>
                         <li>
                           Ved behov for meir arbeid: Flytte tilbake til{" "}
-                          <span className="board-tag board-tag--progress">In progress</span>
+                          <span className="board-tag board-tag--progress">
+                            In progress
+                          </span>
                         </li>
                         <li>
                           Om oppgåva er ferdig: Flytte til{" "}
-                          <span className="board-tag board-tag--tested">Tested OK</span>
+                          <span className="board-tag board-tag--tested">
+                            Tested OK
+                          </span>
                         </li>
                         <li>Om det skal testast meir: La ligge</li>
                       </ul>
@@ -241,7 +247,10 @@ export default function About() {
                   </ul>
                 </li>
                 <li>
-                  Gå gjennom <span className="board-tag board-tag--progress">In progress</span>
+                  Gå gjennom{" "}
+                  <span className="board-tag board-tag--progress">
+                    In progress
+                  </span>
                   <ul>
                     <li>
                       Gå gjennom kvar oppgåve og høyre om korleis ting går, og
@@ -249,18 +258,24 @@ export default function About() {
                     </li>
                     <li>
                       Om oppgåva er klar, flytt denne til{" "}
-                      <span className="board-tag board-tag--review">Ready for review</span> og
-                      endre ansvarleg person (assignee).
+                      <span className="board-tag board-tag--review">
+                        Ready for review
+                      </span>{" "}
+                      og endre ansvarleg person (assignee).
                     </li>
                     <li>
                       Fange opp om det er personar i teamet som ikkje har
                       oppgåver i{" "}
-                      <span className="board-tag board-tag--progress">In progress</span>.
+                      <span className="board-tag board-tag--progress">
+                        In progress
+                      </span>
+                      .
                     </li>
                   </ul>
                 </li>
                 <li>
-                  Gå gjennom <span className="board-tag board-tag--todo">Todo</span>
+                  Gå gjennom{" "}
+                  <span className="board-tag board-tag--todo">Todo</span>
                   <ul>
                     <li>
                       Sjå kva oppgåver som kan/bør takast vidare, og kven som
@@ -268,7 +283,10 @@ export default function About() {
                     </li>
                     <li>
                       Assigne til riktig person og flytte issue til{" "}
-                      <span className="board-tag board-tag--progress">In progress</span>.
+                      <span className="board-tag board-tag--progress">
+                        In progress
+                      </span>
+                      .
                     </li>
                   </ul>
                 </li>
@@ -282,8 +300,8 @@ export default function About() {
                 <h3>Retrospektiv</h3>
                 <span className="meeting-frequency">1 gong i månaden</span>
                 <p>
-                  Vi reflekterer saman over siste periode – kva fungerte bra, kva
-                  kan gjerast betre, og kva tiltak tek vi med oss vidare.
+                  Vi reflekterer saman over siste periode – kva fungerte bra,
+                  kva kan gjerast betre, og kva tiltak tek vi med oss vidare.
                 </p>
               </div>
             </summary>
@@ -293,9 +311,7 @@ export default function About() {
                 <li>
                   Identifisere kva som har fungert bra og bør vidareførast
                 </li>
-                <li>
-                  Peike på utfordringar og ting som kan gjerast betre
-                </li>
+                <li>Peike på utfordringar og ting som kan gjerast betre</li>
                 <li>
                   Bli einige om konkrete tiltak som kan styrke samarbeidet,
                   prosessane eller arbeidsflyt framover
@@ -304,8 +320,8 @@ export default function About() {
 
               <p>
                 Vi har eigne møte til planning og oppgåvegjennomføring. I retro
-                held vi fokus på agendaen for nettopp desse møta. Også her har vi
-                nokre rammer som vi har blitt einige om i teamet:
+                held vi fokus på agendaen for nettopp desse møta. Også her har
+                vi nokre rammer som vi har blitt einige om i teamet:
               </p>
               <ul>
                 <li>Vi gir beskjed dersom vi ikkje kan komme</li>
@@ -371,9 +387,7 @@ export default function About() {
             <summary className="meeting-summary">
               <div className="meeting-summary-content">
                 <h3>Backlog grooming</h3>
-                <span className="meeting-frequency">
-                  2 gonger i månaden
-                </span>
+                <span className="meeting-frequency">2 gonger i månaden</span>
                 <p>
                   Vi går gjennom backloggen, vurderer nye behov, prioriterer og
                   sikrar at oppgåvene er klare til å jobbast med.
@@ -381,9 +395,7 @@ export default function About() {
               </div>
             </summary>
             <div className="meeting-details">
-              <p>
-                Meir informasjon om backlog grooming kjem snart.
-              </p>
+              <p>Meir informasjon om backlog grooming kjem snart.</p>
             </div>
           </details>
         </section>
@@ -399,17 +411,17 @@ export default function About() {
           <div className="site-section">
             <h3>digdir.no</h3>
             <p>
-              Hovudsida til Digitaliseringsdirektoratet. Her finn du
-              informasjon om direktoratet, tenester og ressursar for digital
-              transformasjon i offentleg sektor.
+              Hovudsida til Digitaliseringsdirektoratet. Her finn du informasjon
+              om direktoratet, tenester og ressursar for digital transformasjon
+              i offentleg sektor.
             </p>
           </div>
 
           <div className="site-section">
             <h3>uutilsynet.no</h3>
             <p>
-              Nettsida til Tilsynet for universell utforming av ikt. Her finn
-              du rettleiing, regelverk og ressursar om universell utforming.
+              Nettsida til Tilsynet for universell utforming av ikt. Her finn du
+              rettleiing, regelverk og ressursar om universell utforming.
             </p>
           </div>
 
@@ -417,8 +429,7 @@ export default function About() {
             <h3>samarbeid.digdir.no</h3>
             <p>
               Samarbeidsportalen for offentleg sektor. Ein stad for deling av
-              kunnskap, verktøy og erfaringar på tvers av offentlege
-              verksemder.
+              kunnskap, verktøy og erfaringar på tvers av offentlege verksemder.
             </p>
           </div>
         </section>
