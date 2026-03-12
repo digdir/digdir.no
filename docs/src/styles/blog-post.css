@@ -59,6 +59,7 @@
   font-size: 0.9375rem;
   font-weight: 600;
   color: var(--color-text);
+  margin-bottom: -3px;
 }
 
 .blog-post-author-title {

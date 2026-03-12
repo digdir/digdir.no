@@ -36,7 +36,7 @@ export default function BlogPost() {
         <div className="blog-post-authors">
           <div className="blog-post-author">
             <img
-              src={assetUrl("/images/authors/user1.png")}
+              src={assetUrl("/images/authors/oyvind.png")}
               alt="Solveig Nordstrøm"
               className="blog-post-author-avatar"
             />
@@ -47,7 +47,7 @@ export default function BlogPost() {
           </div>
           <div className="blog-post-author">
             <img
-              src={assetUrl("/images/authors/user2.png")}
+              src={assetUrl("/images/authors/vilde.png")}
               alt="Eirik Bakken"
               className="blog-post-author-avatar"
             />
@@ -66,11 +66,16 @@ export default function BlogPost() {
         />
       )}
       <div className="blog-post-content">
-        <Component components={{
-          img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-            <img {...props} src={props.src ? assetUrl(props.src) : undefined} />
-          ),
-        }} />
+        <Component
+          components={{
+            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+              <img
+                {...props}
+                src={props.src ? assetUrl(props.src) : undefined}
+              />
+            ),
+          }}
+        />
       </div>
       <footer className="blog-post-footer">
         <Link to="/blogg">&larr; Tilbake til alle innlegg</Link>
