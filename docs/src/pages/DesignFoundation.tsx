@@ -40,7 +40,7 @@ export default function DesignFoundation() {
           <Link
             key={section.slug}
             to={`/designfundament/${section.slug}`}
-            className={`df-card ${section.highlight ? "df-card--highlight" : ""}`}
+            className="df-card"
           >
             <span className="df-card-number">{section.number}</span>
             <span className="df-card-title">{section.title}</span>
