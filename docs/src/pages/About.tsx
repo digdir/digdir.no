@@ -126,7 +126,7 @@ export default function About() {
           <details className="meeting-accordion">
             <summary className="meeting-summary">
               <div className="meeting-summary-content">
-                <h3>Standup</h3>
+                <h3>Standup og prioritering</h3>
                 <span className="meeting-frequency">Kvar måndag og onsdag</span>
                 <p>
                   Kort og konsist statusmøte der vi går gjennom inbox, epics,
@@ -154,14 +154,8 @@ export default function About() {
               </ul>
 
               <p>
-                Ansvarleg for å gjennomføre standup i prioritert rekkjefølgje:
+                Me rullerer på kven som leier møta, og det er denne personen som har ansvar for å føre agendaen og sikre at møtet held seg til planlagt tid.
               </p>
-              <ol>
-                <li>Øyvind (design lead)</li>
-                <li>Sture (tech lead)</li>
-              </ol>
-
-              <h4>Agenda</h4>
 
               <h5>Inbox</h5>
               <ol>
@@ -186,24 +180,8 @@ export default function About() {
                 <li>Sjekk roadmap og skyv på tidsestimat ved behov.</li>
               </ol>
 
-              <h5>Oppgåveflyt</h5>
+              <h5>Standup rutine:</h5>
               <ol>
-                <li>
-                  Gå gjennom{" "}
-                  <span className="board-tag board-tag--backlog">Backlog</span>
-                  <ul>
-                    <li>
-                      Sjå om det ligg issues som treng: Ansvarleg(e), Tags,
-                      Size, Beskrivelse / spesifikasjon
-                    </li>
-                    <li>
-                      Flytt oppgåver som skal prioriterast i denne perioden til{" "}
-                      <span className="board-tag board-tag--todo">Todo</span>.
-                      Vurder om oppgåva krev ein ny Epic eller skal høyre til
-                      ein eksisterande Epic.
-                    </li>
-                  </ul>
-                </li>
                 <li>
                   Gå gjennom{" "}
                   <span className="board-tag board-tag--tested">Testa OK</span>
@@ -298,7 +276,7 @@ export default function About() {
             <summary className="meeting-summary">
               <div className="meeting-summary-content">
                 <h3>Retrospektiv</h3>
-                <span className="meeting-frequency">1 gong i månaden</span>
+                <span className="meeting-frequency">kvar 6. veke</span>
                 <p>
                   Vi reflekterer saman over siste periode – kva fungerte bra,
                   kva kan gjerast betre, og kva tiltak tek vi med oss vidare.
@@ -338,11 +316,10 @@ export default function About() {
               </ul>
 
               <p>
-                Ansvarleg for å gjennomføre retro i prioritert rekkjefølgje:
+                Ansvarleg for å gjennomføre retro:
               </p>
               <ol>
-                <li>Øyvind (design lead)</li>
-                <li>Sture (tech lead)</li>
+                <li>Me rullerer på kven som leier retro</li>
               </ol>
 
               <h4>Agenda</h4>
