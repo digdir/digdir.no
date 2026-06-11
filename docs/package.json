@@ -30,11 +30,11 @@
     "@mdx-js/rollup": "^3.1.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.4",
+    "@vitejs/plugin-react": "^5.2.0",
     "gray-matter": "^4.0.3",
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^5.2.0",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1"
+    "vite": "^8.0.16"
   }
 }
