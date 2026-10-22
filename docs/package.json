@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "^5.2.0",
     "gray-matter": "^4.0.3",
     "remark-frontmatter": "^5.0.0",
-    "remark-mdx-frontmatter": "^5.2.0",
+    "remark-mdx-frontmatter": "^6.0.0",
     "typescript": "^5.9.3",
     "vite": "^8.3.5"
   }
